@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NKO - Adalden</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=582937771761901";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <div id="alerts" class="center mid-screen"></div>
+    <div id="gameOverContainer" class="center mid-screen"><div id="gameOver"></div></div>
+
+    <div id="header">
+      <div id="timer"></div>
+    </div>
+
+    <div class="controls-container">
+      <div id="controls">
+        <h3>Controls</h3>
+        <div><div class="ctrl">Arrow keys</div> - <span>Move</span></div>
+        <div><div class="ctrl">Spacebar</div> - <span>Shoot</span></div>
+
+        <div><div class="ctrl">T</div> - <span>Chat</span></div>
+        <div><div class="ctrl">/setNick {name}</div> - <span>Set Nickname</span></div>
+
+        <div><div class="ctrl">M</div> - <span>Mute/Unmute</span></div>
+        <div><div class="ctrl">C</div> - <span>Toggle This Window</span></div>
+        <div><div class="ctrl">H</div> - <span>Toggle Chat Window</span></div>
+
+        <div><div class="ctrl">Esc</div> - <span>Get back to the game</span></div>
+      </div>
+    </div>
+
+    <div id="view"></div>
+
+
+    <div id="allChats"></div>
+    <input type="text" id="chatBox">
+
+    <div id="footer">
+      <button class="btn" id="muteButton">Mute (m)</button>
+      <button class="btn" id="chatButton">Hide Chat (h)</button>
+      <button class="btn" id="controlsBtn">Show Controls (c)</button>
+      <div class="the-stuffs">
+        <div id="copyright">This game designed and coded by <a href="https://github.com/numso">Dallin Osmun</a>, <a href="https://github.com/richiepreece">Richie Preece</a>, and <a href="https://github.com/justinkredible56">Justin Permann</a> &copy; 2013</div>
+
+        <iframe src="http://nodeknockout.com/iframe/adalden" frameborder="0" scrolling="no" allowtransparency="true" width="115" height="25"></iframe>
+
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://adalden.2013.nodeknockout.com/" data-text="Check out this sweet game built in NodeJS, SocketIO, and Pixi" data-size="large" data-hashtags="nko13">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <div class="fb-like" data-href="http://adalden.2013.nodeknockout.com/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+      </div>
+    </div>
+
+    <!-- Libraries -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/lib/pixi.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/moment.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/howler.js"></script>
+
+    <script src="resources/test-map.js"></script>
+
+    <!-- Pixi Files -->
+    <script src="js/game/main.js"></script>
+
+  </body>
+</html>

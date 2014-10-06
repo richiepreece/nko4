@@ -1,0 +1,20 @@
+{"frames": [
+
+{
+	"filename": "gun.png",
+	"frame": {"x":2,"y":2,"w":4,"h":26},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":251,"y":72,"w":4,"h":26},
+	"sourceSize": {"w":640,"h":400}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "gun.png",
+	"format": "RGBA8888",
+	"size": {"w":8,"h":32},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c15b74c6d085f6529ef392541dab8ac0:1/1$"
+}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "nko4-adalden",
+  "version": "0.0.1",
+  "description": "Adalden",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nko4/adalden.git"
+  },
+  "dependencies": {
+    "nko": "*",
+    "express": "3.4.0",
+    "stylus": "*",
+    "config": "~0.4.33",
+    "socket.io": "~0.9.16",
+    "underscore": "~1.5.2",
+    "moment": "~2.4.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

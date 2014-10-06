@@ -1,0 +1,129 @@
+*
+  padding: 0
+  margin: 0
+  font-family: TrebuchetMS, Helvetica, sans-serif
+
+body
+  background-color: lightblue
+
+canvas
+  width: 100%
+  height: auto
+
+#header
+  position: relative
+  z-index: 1
+  text-align: center
+
+#footer
+  background-color: lightblue
+  position: absolute
+  bottom: 0
+  width: 100%
+
+.center
+  margin: auto
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+.mid-screen
+  font-size: 36px
+  font-weight: bold
+  text-align: center
+  height: 25px
+  color: white
+  z-index: 1
+
+  &.a
+    background-color: rgba(0, 0, 0, .5)
+    padding: 20px
+
+  &.b
+    background-color: rgba(0, 0, 0, .5)
+    padding: 20px
+
+#timer
+  text-align: center
+  margin-top: 15px
+  font-size: 36px
+  background-color: rgba(255, 255, 255, .5)
+  display: inline-block
+  padding: 20px
+  min-width: 100px
+
+h1
+  float: left
+
+button
+  margin-left: 10px
+  margin-top: 10px
+
+.a
+  color: red !important
+
+.b
+  color: rgb(110, 110, 255) !important
+
+.the-stuffs
+  float: right
+
+#allChats
+  position: absolute
+  bottom: 0
+  z-index: 2
+  margin-left: 100px
+  margin-bottom: 100px
+  padding: 10px
+  background-color: rgba(0,0,0,.7)
+  min-width: 400px
+
+  span
+    color: white
+    font-size: 18px
+    display: block
+
+#chatBox
+  position: absolute
+  bottom: 0
+  margin-bottom: 70px
+  margin-left: 100px
+  z-index: 2
+  left: 0
+  width: 400px
+  display: none
+
+#gameOverContainer
+  height: 200px
+
+#gameOver
+  background-color: rgba(0, 0, 0, .5)
+  padding: 20px
+  display: none
+
+.controls-container
+  position: absolute
+  width: 100%
+  z-index: 4
+
+#controls
+  margin: 0 auto
+  padding: 20px
+  border-radius: 5px
+  max-width: 700px
+  background-color: white
+  display: none
+
+  h3
+    text-align: center
+
+  .ctrl
+    font-size: 20px
+    display: inline-block
+    width: 170px
+
+  span
+    font-size: 20px
+    padding-left: 30px
